@@ -68,7 +68,7 @@ public class StudentController {
 		return studentService.find(id);
 	}
 	
-	@RequestMapping(method = RequestMethod.GET , value = "/astudent/{age}")
+	@RequestMapping(method = RequestMethod.GET , value = "/student/{age}")
 	public List<Student> findbyAge(@PathVariable int age){
 		return studentService.findByAge(age);
 	}
